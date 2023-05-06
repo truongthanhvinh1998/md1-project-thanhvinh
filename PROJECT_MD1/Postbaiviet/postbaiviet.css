@@ -1,0 +1,125 @@
+/* Modal container */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 300px; 
+  height: 700px; 
+  overflow: auto; 
+  background-color: rgba(75, 73, 73, 0.4); 
+
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50% !important;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(73, 69, 69, 0.5);
+  border-radius: 10px;
+  border: none;
+  background-size: cover;
+}
+
+/* Modal header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  border-bottom: 1px solid rgb(177, 176, 176);
+}
+
+/* Modal body */
+.modal-body {
+  margin-top: 20px;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#content {
+  padding: 20px;
+  width: 100%;
+  height: 400px;
+  box-shadow: 0px 0px 5px rgba(73, 69, 69, 0.5);
+  border-radius: 10px;
+  border: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.avatar_img_container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  
+}
+.thanhvinh {
+  padding: 10px;
+  font-size: 20px;
+}
+.avatar_img {
+  padding: 20px;
+}
+.avatar_img_container select {
+  background-color: rgb(182, 192, 192);
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+
+}
+.btn_container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+ 
+}
+.btn_container button {
+  background-color: #1877f2;
+  width: 400px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(158, 153, 153, 0.5);
+  color: white;
+  font-size: 30px;
+}
+.container_imoji {
+  background-color: rgb(207, 210, 217);
+  width: 190px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+#file {
+  display: none;
+}
+.text_up {
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: #d0d4d8;
+  box-shadow: 0px 0px 5px rgba(209, 201, 201, 0.5);
+  color: rgb(45, 40, 40);
+  font-weight: 300;
+}
+.img-post {
+  border-radius: 10px;
+ 
+}

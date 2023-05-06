@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./postbaiviet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- trang tao bai viet -->
+  </head>
+  <body>
+    <button id="createPostBtn">Tạo bài viết</button>
+
+    <div id="createPostModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div></div>
+          <h1>Tạo bài viết mới</h1>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="avatar_img_container">
+              <div class="avatar_img">
+                <i class="fa-solid fa-user fa-2xl"></i>
+              </div>
+              <div>
+                <div class="thanhvinh">Thanh Vinh</div>
+                <div>
+                  <select name="" id="">
+                    <option value="">
+                      <i class="fa-solid fa-users"></i>Bạn bè
+                    </option>
+                    <option value="">Riêng tư (Chỉ mình tôi)</option>
+                    <option value="">Bạn bè được chọn</option>
+                    <option value="">Bạn bè được chọn</option>
+                    <option value="">Xem thêm</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div>
+              <textarea
+                placeholder="Bạn đang nghĩ gì thế"
+                id="content"
+                name="content"
+                rows="30"
+                cols="110"
+              ></textarea>
+              <div>
+                <select class="container_imoji"  name="" id="">
+                  <option value="">Thêm cảm xúc của bạn</option>
+                  <option value="">Đang cảm thấy vui vẻ</option>
+                  <option></option>
+                  <option value="">Đang cảm thấy hạnh phúc</option>
+                  <option value="">Đang cảm thấy cô đơn</option>
+                  <option value="">Thêm cảm xúc khác</option>
+                </select>
+              </div>
+            </div>
+            <div class="btn_container">
+                <label for="file" class="text_up">Thêm ảnh hoặc video của bạn</label>
+              <input
+                type="file"
+                name="file"
+                id="file"
+                accept="image/jpeg, image/jpg, image/png, image/gif, video/mp4, video/webm, video/quicktime, video/x-m4v"
+                allowdirs="false"
+                directory="false"
+              />
+              <button type="submit">Đăng bài</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./postbaiviet.js"></script>
+  </body>
+</html>
